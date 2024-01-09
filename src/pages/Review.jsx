@@ -45,16 +45,16 @@ const Review = ()=>{
     }
 
     return(
-        <div className="bg-purple-400 relative" style={{width:"100vw", height:"100vh"}}>
-            <div className=" w-1/2 h-2/3 absolute top-24 left-1/4 bg-white rounded-xl">
-                  <div className='w-24 h-24 mx-auto mt-5 border-2 rounded-full overflow-hidden object-cover '>
+        <div className="bg-purple-400 m-0 p-0 relative flex w-screen h-screen overflow-hidden" >
+            <div className=" w-full  sm:w-1/2 mx-auto h-2/3 my-auto  bg-white rounded-xl">
+                  <div className='w-24 h-24 mx-auto pt-5 border-2 rounded-full overflow-hidden object-cover '>
                       <img src={data.src} alt="my photo" className='w-full h-full object-cover ' />
                     </div>
-                    <h1 className="text-center font-semibold text-2xl mt-2">{data.name}</h1>
+                    <h1 className="text-center font-semibold text-2xl pt-2">{data.name}</h1>
                     <h1 className="text-center font-medium text-purple-600 ">{data.role}</h1>
                     <p className="text-gray-500 py-5 px-10">{data.description}</p>
-                    <button onClick={()=>{handleClick(data.id)}} className="border-2  border-purple-600 w-28 rounded-md mx-64">Next</button>
-                    <button onClick={()=>{handleBack(data.id)}} className="border-2 border-purple-600 w-28 rounded-md mx-64">Back</button>
+                    <button onClick={()=>{handleClick(data.id)}} className="border-2 flex mb-2 border-purple-600 w-fit px-2 rounded-md mx-auto">Next</button>
+                    <button onClick={()=>{handleBack(data.id)}} className="border-2 flex mx-auto border-purple-600 w-fit px-2 rounded-md ">Back</button>
              </div>
         </div>
     )

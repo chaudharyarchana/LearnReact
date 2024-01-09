@@ -56,3 +56,10 @@
     border: 2px rgba(245, 245, 245, 0.89);
     border-radius: 5px;
   }
+  @media (max-width: 576px) {
+    .calculator{
+      width: 100vw;
+      position: absolute;
+      left: 0%;
+    }
+  }

@@ -4,7 +4,7 @@ const Weather =({data,icon})=>{
 
 
 return(
-  (data && <div className=" text-gray-700 p-8 rounded-lg shadow-lg mx-auto w-1/2 mt-28">
+  (data && <div className=" text-gray-700 p-8 rounded-lg shadow-lg mx-auto w-full sm:w-1/2 mt-28">
 
   <div className="flex items-center justify-center text-center">
     <div>

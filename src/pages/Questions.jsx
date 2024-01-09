@@ -21,7 +21,7 @@ const Card=({item})=>{
     
     return(
         <div className="w-full h-auto mb-5">
-          <h1 className="ml-5 text-lg">{item.question} <span className="cursor-pointer border-2 rounded-lg" onClick={()=>{setAnswer(!answer)}}>{answer? "-":"+"}</span></h1>
+          <h1 className="ml-5 text-lg">{item.question} <span className="cursor-pointer absolute right-0 border-2 px-2 bg-red-500 text-white rounded-lg" onClick={()=>{setAnswer(!answer)}}>{answer? "-":"+"}</span></h1>
           {answer && <p className="text-sm ml-5">{item.answer}</p>}
         </div>
     )
@@ -30,7 +30,7 @@ const Card=({item})=>{
 const Questions=()=>{
     
     return(
-        <div className="w-96 h-96 shadow-lg border-2 mx-auto mt-24">
+        <div className="w-full  h-full shadow-lg border-2 mx-auto mt-24">
             <h1 className="text-center text-2xl my-5 font-medium">Questions</h1>
             {data.map((item)=>(
                 <Card item={item}/>

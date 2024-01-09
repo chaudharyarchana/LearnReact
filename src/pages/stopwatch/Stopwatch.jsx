@@ -36,8 +36,9 @@ const Stopwatch = () => {
   };
 
   return (
-    <div>
-      <h1 className="text-center mt-20 text-2xl font-bold uppercase">stopwatch</h1>
+    <div className="w-full m-0 p-0 bg-green-200" style={{height:"100vh"}}>
+    <div >
+      <h1 className="text-center pt-20 text-2xl font-bold uppercase">stopwatch</h1>
 
       <p className="text-6xl text-center font-semibold">
         {("0" + Math.floor((time / 60000) % 60)).slice(-2)} :{" "}
@@ -79,6 +80,7 @@ const Stopwatch = () => {
           </button>
         </div>
       )}
+    </div>
     </div>
   );
 };

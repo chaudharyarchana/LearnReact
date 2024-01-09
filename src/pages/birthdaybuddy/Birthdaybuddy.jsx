@@ -26,7 +26,7 @@ const Birthdaybuddy= ()=>{
     return(
         <>
         <div style={{width:"100wv" , height:"100vh"}} className="bg-pink-300 relative">
-            <div className="w-1/2  bg-white absolute top-20 left-1/4 rounded-md shadow-md pb-10">
+            <div className="w-full sm:w-1/2 bg-white absolute top-20 sm:left-1/4 rounded-md shadow-md pb-10">
              <h1 className="text-3xl m-5">{show ? "3" : "0"} birthdays Today</h1>
             { show && data.map((item)=>(
                   

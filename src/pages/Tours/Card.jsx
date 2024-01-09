@@ -4,8 +4,8 @@ const Card =({item, handleRemove})=>{
     const[read,setRead]=useState(false)
 
     return (
-        <div className={`shadow-lg hover:shadow-2xl mx-5 mb-8 ${read ? "h-auto" : "h-fit"} rounded-lg`} key={item.id} style={{width:"30%"}}>
-        <div className='w-full  overflow-hidden relative' style={{height:"40vh"}}>
+        <div className={`shadow-lg hover:shadow-2xl px-5 overflow-hidden w-full sm:w-1/2 lg:w-1/3 h-80 mb-8 ${read ? "h-auto" : "h-fit"} rounded-lg`} key={item.id} >
+        <div className='w-full  overflow-hidden relative h-1/2' >
              <img src={item.src} className='w-full h-full object-cover'/>
              <p className="bg-green-600 absolute top-0 right-0 w-16 h-8 text-lg text-center text-white">${item.price}</p>
         </div>

@@ -4,7 +4,7 @@ import data from './data.jsx';
 
 const Food =({item})=>{
     return(
-        <div className='shadow-xl mb-20 hover:shadow-2xl'  style={{height:"80vh",width:"30%"}}>
+        <div className='shadow-xl mb-20 hover:shadow-2xl h-96  w-full px-5 sm:w-1/2 lg:w-1/3 overflow-hidden' >
             <div className='h-2/3 overflow-hidden '>
                 <img src={item.img} className='h-full w-full object-cover'/>
             </div>

@@ -8,6 +8,10 @@ const IMAGES = {
     calci : require('./calci.jpg'),
     question: require('./question.jpg'),
     tour:require('./tour.jpg'),
-    review:require('./review.jpg')
+    review:require('./review.jpg'),
+    education : require('./assests/education.png'),
+    github : require('./assests/github.png'),
+    linkedin : require('./assests/linkedin.png')
+
 }
 export default IMAGES;
